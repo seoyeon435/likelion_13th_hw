@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<body class="secondpage">
+<header class="secondpage">
+    <h1>🦁친바 활동 기록🦁</h1>
+    <p>멋쟁이사자처럼 7조 | FE 박서연</p>
+    <p>📎 <a href="https://www.notion.so/7-1bca9304f66380c8a296da96b9e8cd6f" target="_blank">🔗친바 노션 바로가기</a></p>
+</header>
+
+<main>
+    <section class="activity-container">
+
+        <div class="activity-card">
+            <h2>🎮 보드게임 카페 다녀오기</h2>
+            <img src="{% static 'images/game.jpg' %}" alt="보드게임" class="activity-img">
+            <p class="date">2025-04-04</p>
+            <p class="description">보드게임 카페에서 3시간 불태우기🔥</p>
+
+        </div>
+
+        <div class="activity-card">
+            <h2>💻 모각코 하기</h2>
+            <img src="{% static 'images/mogakco.jpg' %}" alt="모각코" class="activity-img">
+            <p class="date">2025-04-04</p>
+            <p class="description">블루포트에서 모각코라니.. 낭만 미쳤다</p>
+        </div>
+
+        <div class="activity-card">
+            <h2>🍚학식 같이 먹고 인증하기</h2>
+            <img src="{% static 'images/dinner.jpg' %}" alt="학식" class="activity-img">
+            <p class="date">2025-04-04</p>
+            <p class="description">수빈언니 제가 학식보다 더 맛있는거 사줄게요...ㅜ💕</p>
+        </div>
+
+        <div class="activity-card">
+            <h2>🏙️명동 걸어가서 길거리 음식 먹기</h2>
+            <img src="{% static 'images/myeongdong.jpg' %}" alt="명동" class="activity-img">
+            <p class="date">2025-04-04</p>
+            <p class="description">기대 이상으로 맛있었던 명동 음식들 !</p>
+        </div>
+
+    </section>
+</main>
+
+</body>
+
+{% endblock %}

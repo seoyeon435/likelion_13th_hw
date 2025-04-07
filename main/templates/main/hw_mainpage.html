@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+<header>
+    <h1>🦁 2주차 Django 세션 복습 🦁</h1>
+    <p>멋쟁이사자처럼 13기 FE 박서연</p>
+</header>
+
+<main>
+
+    <section>
+    <h2><strong><기본 폴더 구조></strong></h2>
+    <ul>
+        <li><strong>manage.py</strong> – Django 명령어 실행 진입점</li>
+        <li><strong>settings.py</strong> – 전체 프로젝트 설정 관리</li>
+        <li><strong>urls.py</strong> – URL 경로 지정</li>
+        <li><strong>views.py</strong> – 요청을 받아서 HTML로 응답</li>
+        <li><strong>templates/</strong> – HTML 템플릿 모아두는 폴더</li>
+    </ul>
+    
+    </section>
+
+    <section>
+    <h2>📌 1. HTML 페이지 생성& view와 연결</h2>
+    <ol>
+        <li>HTML 파일 생성 & 파일에 코드 작성
+        <li>views.py: 어떤 HTML을 보여줄지 Django가 판단하고 렌더링하는 핵심 연결 고리</li>
+        <li>데이터에 맞는 html을 전송해주는 함수 작성</li>
+        <li>urls.py: url에 해당하는 데이터 연결</li>
+    </ol>
+    </section>
+
+    <section>
+    <h2>📌 2. HTML 링크 연결</h2>
+        <ol>
+            <li>urls.py 에서 지정한 name을 활용하여 html페이지에서 해당 페이지로 이동할 수 있도록 링크 걸어줌</li>
+        </ol>
+    </section>
+
+    <section>
+    <h2>📌 3. template 언어</h2>
+    <ul>
+        <li>템플릿 변수: Django의 view 함수에서 넘겨준 데이터를 HTML에서 사용하기 위한 변수</li>
+        <li>템플릿 태그: 제어문(조건, 반복), URL 연결, static 파일 처리 등 로직을 구현할 때 사용하는 명령어</li>
+        <li>템플릿 필터: 변수에 기능을 추가해 출력값을 가공하는 도구</li>
+        <li>템플릿 주석: 브라우저에 출력되지 않고 Django 내부에서만 참고되는 설명</li>
+    </ul>
+    </section>
+
+</main>
+
+<footer>
+    <hr>
+    <p>아기사자 FE 박서연</p>
+</footer>
+
+
+</body>
+{% endblock %}
