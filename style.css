@@ -24,6 +24,7 @@
     grid-area: area1;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
 }
 
 .item:nth-child(2) {
@@ -200,4 +201,6 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+>>>>>>> d585a51 (3주차 과제 수정)
 }
