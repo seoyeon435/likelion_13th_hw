@@ -109,14 +109,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 4px 10px;
+        flex-grow: 1;
         color: white;
     }
         
     .comment_heart {
         width: 16px;
         height: 16px;
-        fill: white;
+        fill: gray;
+        flex-shrink: 0;
     }
         
     .date {
